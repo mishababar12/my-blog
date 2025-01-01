@@ -1,4 +1,3 @@
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'; // Social media icons
 
 export default function Footer() {
   return (
@@ -13,7 +12,7 @@ export default function Footer() {
           {/* Skincare Line */}
           <div className="text-center ">
             <p className="text-lg text-pink-400 font-semibold">
-              "Healthy, glowing skin starts with great care. Invest in your skin today for a radiant tomorrow."
+              Healthy, glowing skin starts with great care. Invest in your skin today for a radiant tomorrow.
             </p>
           </div>
 
