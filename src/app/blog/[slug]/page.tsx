@@ -3,8 +3,6 @@
 import { useParams } from 'next/navigation'; // Import useParams from next/navigation
 import  { useState } from 'react';
 import React from 'react';
-import { FaCalendarAlt } from 'react-icons/fa'; // Calendar Icon for dates
-import { FaRegCommentDots } from 'react-icons/fa'; // Comment Icon for comments
 import Image from 'next/image'; // Import Next.js Image component for optimized images
 
 const BlogPost = () => {
@@ -226,6 +224,10 @@ const BlogPost = () => {
       `,
     }
   ];
+  // State to store the comments, now with a defined type
+const [comments, setComments] = useState<{ id: number; name: string; text: string }[]>([]);
+const [name, setName] = useState("");
+const [commentText, setCommentText] = useState("");
 
   
 // Find the post based on the slug
@@ -235,10 +237,7 @@ if (!post) {
   return <div>Post not found</div>;
 }
 
-// State to store the comments, now with a defined type
-const [comments, setComments] = useState<{ id: number; name: string; text: string }[]>([]);
-const [name, setName] = useState("");
-const [commentText, setCommentText] = useState("");
+
 
 // Handle comment submission
 const handleCommentSubmit = (e: React.FormEvent) => {
