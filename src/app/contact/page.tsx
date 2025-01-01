@@ -9,7 +9,7 @@ export default function ContactForm() {
     message: ''
   });
 
-  const handleInputChange = (e: any) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -17,7 +17,7 @@ export default function ContactForm() {
     });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e:  React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission here (e.g., send data to server or display a confirmation)
     alert('Form submitted!');
@@ -33,7 +33,7 @@ export default function ContactForm() {
             Get in Touch with Us
           </h2>
           <p className="text-lg text-pink-400 mb-8">
-            We’d love to hear from you! Fill out the form below and we’ll get back to you.
+            We had love to hear from you! Fill out the form below and we will get back to you.
           </p>
         </div>
 
