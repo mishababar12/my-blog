@@ -4,6 +4,7 @@ import Image from 'next/image';
 import logo from "../../../public/logo.png"; // Update this path with your logo's location
 import { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri"; // Import the hamburger icons
+import Link from 'next/link';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage the menu open/close
@@ -17,14 +18,14 @@ export default function Header() {
       <header className="flex items-center justify-between p-4 bg-gradient-to-r from-lime-100 via-fuchsia-200 to-rose-300">
         
         {/* Logo and Blog Name */}
-        <a href="#" className="flex items-center space-x-3">
+        <Link href="#" className="flex items-center space-x-3">
           {/* Logo Image */}
           <div className="relative w-12 h-12">
             <Image src={logo} alt="Skin Care Hai Logo" layout="fill" objectFit="contain" />
           </div>
           {/* Blog Name */}
           <span className="text-2xl font-bold text-pink-400">Skin Care</span>
-        </a>
+        </Link>
 
         {/* Hamburger Button (Visible only on mobile) */}
         <div className="md:hidden">
