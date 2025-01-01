@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image'; // For image handling (you can also use <img> tag if not using Next.js)
-import profileImage from '../../../public/profileImage.jpg'; // Add your profile image here
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'; // Social media icons
 import one from "../../../public/one.jpeg"
 import two from "../../../public/two.jpg"
@@ -29,13 +28,13 @@ export default function About() {
         {/* Left Section (Text Content) */}
         <div className="flex-1 -mt-18">
           <h3 className="text-3xl font-semibold text-pink-400">
-            Hi, I'm a Skin Care Specialist, and I’m Passionate About Skin Care
+            Hi, Im a Skin Care Specialist, and Im Passionate About Skin Care
           </h3>
           <p className="text-lg text-pink-400">
             My journey with skincare began when I struggled with acne, dryness, and uneven skin tone. Like many, I tried countless products and routines, but nothing seemed to work. I realized that true skin health comes from understanding what your skin needs, and it took time to learn about ingredients, habits, and self-care routines.
           </p>
           <p className="text-lg text-pink-400">
-            Now, I’ve made it my mission to help others achieve healthy, glowing skin by sharing my experiences, skin care tips, and expert advice. This blog is where I provide honest reviews, simple routines, and guidance to help you find the best skincare products and habits that work for you.
+            Now, I have made it my mission to help others achieve healthy, glowing skin by sharing my experiences, skin care tips, and expert advice. This blog is where I provide honest reviews, simple routines, and guidance to help you find the best skincare products and habits that work for you.
           </p>
 
           {/* Mission Section */}
@@ -45,7 +44,7 @@ export default function About() {
               My mission is simple — to empower individuals to take care of their skin through education and proper skincare practices. I believe that anyone can have glowing, healthy skin if they understand their skin type, follow a consistent routine, and use the right products.
             </p>
             <p className="text-lg mt-2">
-              Through this blog, I aim to break down the complexities of skincare and make it accessible for everyone. Whether you’re looking for solutions to acne, dryness, aging, or just general skincare tips, I’m here to guide you on your skincare journey.
+              Through this blog, I aim to break down the complexities of skincare and make it accessible for everyone. Whether you are looking for solutions to acne, dryness, aging, or just general skincare tips, Im here to guide you on your skincare journey.
             </p>
           </div>
 
