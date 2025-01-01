@@ -36,19 +36,19 @@ export default function Header() {
 
         {/* Navigation Links - Desktop View */}
         <nav className="hidden md:flex font-bold space-x-6">
-          <a href="#" className="text-pink-400 hover:text-pink-600 transition duration-300">Home</a>
-          <a href="/abuot" className="text-pink-400 hover:text-pink-600 transition duration-300">About</a>
-          <a href="/blog" className="text-pink-400 hover:text-pink-600 transition duration-300">Blog</a>
-          <a href="/contact" className="text-pink-400 hover:text-pink-600 transition duration-300">Contact</a>
+          <Link href="#" className="text-pink-400 hover:text-pink-600 transition duration-300">Home</Link>
+          <Link href="/abuot" className="text-pink-400 hover:text-pink-600 transition duration-300">About</Link>
+          <Link href="/blog" className="text-pink-400 hover:text-pink-600 transition duration-300">Blog</Link>
+          <Link href="/contact" className="text-pink-400 hover:text-pink-600 transition duration-300">Contact</Link>
         </nav>
 
         {/* Mobile Menu - Hidden on Desktop */}
         <div className={`md:hidden absolute top-16 left-0 w-full bg-gradient-to-r from-lime-100 via-fuchsia-200 to-rose-300 p-6 ${isMenuOpen ? 'block' : 'hidden'}`}>
           <nav className="flex flex-col items-center space-y-4">
-            <a href="#" className="text-pink-400 hover:text-pink-600 transition duration-300">Home</a>
-            <a href="/abuot" className="text-pink-400 hover:text-pink-600 transition duration-300">About</a>
-            <a href="/blog" className="text-pink-400 hover:text-pink-600 transition duration-300">Blog</a>
-            <a href="/contact" className="text-pink-400 hover:text-pink-600 transition duration-300">Contact</a>
+            <Link href="#" className="text-pink-400 hover:text-pink-600 transition duration-300">Home</Link>
+            <Link href="/abuot" className="text-pink-400 hover:text-pink-600 transition duration-300">About</Link>
+            <Link href="/blog" className="text-pink-400 hover:text-pink-600 transition duration-300">Blog</Link>
+            <Link href="/contact" className="text-pink-400 hover:text-pink-600 transition duration-300">Contact</Link>
           </nav>
         </div>
       </header>
